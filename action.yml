@@ -1,14 +1,14 @@
 name: ""
 description: ""
 inputs:
-  api-spec:
-    description: "the path"
-    required: true
-    default: "api.yaml"
   generator:
     description: ""
     required: true
-  config-file:
+  spec:
+    description: "the path"
+    required: true
+    default: "api.yaml"
+  config:
     description: ""
     required: false
 outputs:
@@ -19,6 +19,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.api_spec }}
     - ${{ inputs.generator }}
-    - ${{ inputs.config_file }}
+    - ${{ inputs.spec }}
+    - ${{ inputs.config }}
