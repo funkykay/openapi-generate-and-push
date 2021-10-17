@@ -8,8 +8,6 @@ echo "$INPUT_REPOSITORY"
 echo "$INPUT_REPOSITORY_USER"
 echo "$INPUT_REPOSITORY_PASSWORD"
 
-wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.1.0/openapi-generator-cli-5.1.0.jar -O openapi-generator-cli.jar
-
-java -jar openapi-generator-cli.jar version
+openapi-generator version
 
 echo "::set-output name=pokemon_name::$pokemon_name"
