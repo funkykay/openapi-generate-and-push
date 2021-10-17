@@ -11,6 +11,10 @@ inputs:
   config:
     description: ""
     required: false
+  repository:
+    description: ""
+    required: true
+    default: ""
 outputs:
   time:
     description: ""

@@ -1,13 +1,10 @@
 #!/bin/bash
 set -e
 
-echo "$INPUT_API_SPEC"
-echo "$INPUT_APISPEC"
-echo "$INPUT_APISPEC"
-
 echo "$INPUT_GENERATOR"
-
-echo "$INPUT_CONFIG_FILE"
+echo "$INPUT_SPEC"
+echo "$INPUT_CONFIG"
+echo "$INPUT_REPOSITORY"
 
 api_url="https://pokeapi.co/api/v2/pokemon/1"
 echo $api_url
