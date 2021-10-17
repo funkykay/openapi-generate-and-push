@@ -19,6 +19,6 @@
   "homepage": "https://github.com/funkykay/openapi-generate-and-push#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@openapitools/openapi-generator-cli": "^2.4.12"
   }
 }

@@ -2,10 +2,15 @@ name: ""
 description: ""
 inputs:
   api-spec:
+    description: "the path"
+    required: true
+    default: "api.yaml"
+  generator:
     description: ""
     required: true
-    default: ""
-
+  config-file:
+    description: ""
+    required: false
 outputs:
   time:
     description: ""
