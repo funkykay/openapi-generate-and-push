@@ -8,7 +8,7 @@ inputs:
   generator:
     description: ""
     required: true
-  config_file:
+  config-file:
     description: ""
     required: false
 outputs:
@@ -18,3 +18,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.api_spec }}
+    - ${{ inputs.generator }}
+    - ${{ inputs.config_file }}
