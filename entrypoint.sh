@@ -5,6 +5,8 @@ echo "$INPUT_GENERATOR"
 echo "$INPUT_SPEC"
 echo "$INPUT_CONFIG"
 echo "$INPUT_REPOSITORY"
+echo "$INPUT_REPOSITORY_USER"
+echo "$INPUT_REPOSITORY_PASSWORD"
 
 api_url="https://pokeapi.co/api/v2/pokemon/1"
 echo $api_url

@@ -13,8 +13,13 @@ inputs:
     required: false
   repository:
     description: ""
-    required: true
-    default: ""
+    required: false
+  repository_user:
+    description: ""
+    required: false
+  repository_password:
+    description: ""
+    required: false
 outputs:
   time:
     description: ""
@@ -22,7 +27,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.generator }}
-    - ${{ inputs.spec }}
-    - ${{ inputs.config }}
