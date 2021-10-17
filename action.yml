@@ -8,12 +8,15 @@ inputs:
   generator:
     description: ""
     required: true
-  config-file:
+  config_file:
     description: ""
     required: false
 outputs:
   time:
     description: ""
-runs: 
-  using: 'node12'
-  main: 'index.js'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.pokemon_id }}
