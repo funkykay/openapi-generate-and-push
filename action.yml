@@ -1,0 +1,14 @@
+name: ""
+description: ""
+inputs:
+  api-spec:
+    description: ""
+    required: true
+    default: ""
+
+outputs:
+  time:
+    description: ""
+runs: 
+  using: 'node12'
+  main: 'index.js'
