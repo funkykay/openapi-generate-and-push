@@ -8,11 +8,11 @@ echo "$INPUT_REPOSITORY"
 echo "$INPUT_REPOSITORY_USER"
 echo "$INPUT_REPOSITORY_PASSWORD"
 
-openapi-generator generate \ 
-    -g $INPUT_GENERATOR \
-    -i $INPUT_SPEC \
-    -c $INPUT_CONFIG \
-    -o /out
+openapi-generator generate \
+    -g "$INPUT_GENERATOR" \
+    -i "$INPUT_SPEC" \
+    -c "$INPUT_CONFIG" \
+    -o "/out"
 
 ls -l /out
 
