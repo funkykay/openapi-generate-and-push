@@ -14,4 +14,6 @@ openapi-generator generate \
     -c $INPUT_CONFIG \
     -o /out
 
+ls -l /out
+
 echo "::set-output name=pokemon_name::$pokemon_name"
