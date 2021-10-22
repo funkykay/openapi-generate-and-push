@@ -1,12 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "$INPUT_GENERATOR"
-echo "$INPUT_SPEC"
-echo "$INPUT_CONFIG"
-echo "$INPUT_REPOSITORY"
-echo "$INPUT_REPOSITORY_USER"
-echo "$INPUT_REPOSITORY_PASSWORD"
+echo "Openapi generate started."
+echo "GENERATOR: $INPUT_GENERATOR"
+# echo "SPEC: $INPUT_SPEC"
+# echo "CONFIG: $INPUT_CONFIG"
+echo "REPOSITORY: $INPUT_REPOSITORY"
+# echo "REPOSITORY_USER: $INPUT_REPOSITORY_USER"
+# echo "REPOSITORY_PASSWORD: $INPUT_REPOSITORY_PASSWORD"
 
 openapi-generator generate \
     -g "$INPUT_GENERATOR" \
@@ -14,6 +15,5 @@ openapi-generator generate \
     -c "$INPUT_CONFIG" \
     -o "/out"
 
-ls -l /out
 
 echo "::set-output name=pokemon_name::$pokemon_name"
